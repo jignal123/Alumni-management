@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Frank Ruhl Libre;
+}
+
+.main {
+    padding-top: 8.7vh;
+    padding-bottom: 8.7vh;
+}
+
+.purple {
+    color: purple;
+}
+
+.header {
+    background: url("../clg.jpg") no-repeat;
+    background-position: 70% 70%;
+    background-size: cover;
+    height: 50vh;
+}
+
+.navbar .container-fluid {
+    background-color: rgba(97, 97, 97, 0.493);
+    backdrop-filter: blur(5px);
+}
+
+.head {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    color: purple;
+    display: inline-block;
+    /* transform: translateX(311%); */
+}
+
+.head::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: purple;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    background: url("../clg.jpg") no-repeat;
+    background-position: 70% 45%;
+    background-size: cover;
+    --bs-navbar-padding-y: 0rem;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.header .blur {
+    /* transform: translateY(190%); */
+    background-color: rgba(15, 1, 15, 0.788);
+    /* border: 1px solid #fcf9f9a2; */
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.text {
+    padding: 22vh 0 25vh 0;
+    font-weight: 500;
+}
+
+.container-fluid ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+
+
+.actives {
+    background-color: #800080;
+    padding: 7px 15px 7px 15px;
+    transition: 0.5s ease-in-out;
+    border-width: 0px;
+    border-radius: 4px;
+    list-style: none;
+    text-decoration: none;
+    -webkit-text-fill-color: #fcf9f9;
+}
+
+.actives:hover {
+    box-shadow: 0px 0px 0px 4px rgba(128, 0, 128, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.activel {
+    background-color: #800080;
+    padding: 7px 15px 7px 15px;
+    transition: 0.5s ease-in-out;
+    border-width: 0px;
+    border-radius: 4px;
+    list-style: none;
+    text-decoration: none;
+    -webkit-text-fill-color: #fcf9f9;
+}
+
+.activel:hover {
+    box-shadow: 0px 0px 0px 4px rgba(128, 0, 128, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container-fluid ul li a:hover {
+    background-color: rgb(128, 0, 128);
+    color: aliceblue;
+    /* padding-bottom: 0.3rem; */
+}
+
+/* .navbar .container-fluid h1 {
+    font-size: 1.8rem;
+} */
+
+.container-fluid ul {
+    font-size: 16px;
+    list-style: none;
+    font-weight: 300px;
+    justify-content: space-around;
+}
+
+.loader {
+    position: fixed;
+    background-color: rgba(7, 7, 7, 0.692);
+    background-image: url("../loader.gif");
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    overflow: hidden;
+}
+
+@media (max-width:991px) {
+    .actives {
+        background-color: unset;
+        padding: 0;
+        -webkit-text-fill-color: black;
+        transition: 0.5s ease;
+        border: none;
+    }
+
+    .actives:hover {
+        box-shadow: none;
+    }
+
+    .container-fluid ul li a {
+        text-decoration: none;
+        color: rgb(58, 56, 56);
+        padding: 0 0 15px 5px;
+        transition: all 0.5s ease;
+        border-radius: 0px;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .container-fluid ul li a:hover {
+        color: black;
+        transition: all 0.3s ease-in-out;
+        background-color: unset;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 60%;
+    }
+
+    .navbar .container-fluid {
+        background-color: #fcf9f9;
+        backdrop-filter: unset;
+    }
+
+    .navbar {
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: unset;
+        width: 100%;
+    }
+
+    .text {
+        padding: 25vh 0 25vh 0;
+    }
+}
+
+.events {
+    background-color: var(--bs-border-color);
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer {
+    height: 50px;
+}
+
+/* Event Card */
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fffcfc;
+    box-shadow: 0 0 20px rgba(46, 64, 83, 0.5);
+    transition: all 0.3s ease-in-out;
+    height: 80vh;
+}
+
+.event-card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+    background-color: #5a005a;
+    color: #fff;
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-image img:hover {
+    transform: scale(1.1);
+}
+
+.event-details {
+    padding: 20px;
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-location,
+.event-time {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.event-location i,
+.event-time i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.event-footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 20px 20px;
+}
+
+.read-more-btn {
+    background-color: rgb(167, 2, 167);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.read-more-btn:hover {
+    background-color: purple;
+    transform: translateY(-5px);
+}
+
+
+/* Event Horizontal */
+.event-card1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.582);
+    max-height: 55vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-card1:hover {
+    background-color: #5a005a;
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.event-image1 {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-image1 img:hover {
+    transform: scale(1.1);
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.event-details button {
+    background-color: rgb(167, 2, 167);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-details button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.event-details button:hover {
+    background-color: purple;
+    transform: translateY(-5px);
+}
+
+/* Search box css */
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-box input[type="text"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    outline: unset;
+}
+
+.search-box .fa-search {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ccc;
+}
+
+.search-box .fa-search:hover {
+    color: #333;
+}
+
+
+/* Alumni Profile Card */
+
+.alumni-profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.alumni-profile-card {
+    margin: 20px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.alumni-profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.alumni-profile-card h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.alumni-profile-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* Modal Of Alumni Design
+  Add some basic styles to the modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some animation to the modal */
+.modal.fade {
+    transition: opacity 0.3s;
+}
+
+.modal-header {
+    background-color: purple;
+    color: white;
+}
+.modal-header .btn-close{
+    background-color: #fff;
+}
+.modal.show {
+    opacity: 1;
+}
+
+/* Style the alumni image */
+.alumni-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.image{
+   opacity:  1;
+   transition: all 0.3s ease-in-out;
+}
+.image:hover{
+    opacity:  0.7;
+}
+.form-control,
+.form-select{
+    border-radius: 0px;
+}
+.input-field.error {
+  color: red;
+  text-indent: 2px;
+  font-size: 15px;
+}
+
+.input-field.error input,
+.input-field.error .form-select {
+  border: 2px solid red;
+}
+
+.input-field.error span {
+  margin-top: -22px;
+  margin-left: 20px;
+  display: block;
+}
+
+.input-field.error .fa {
+  margin-top: 9px;
+}
+
+.input-field.success input,
+.input-field.success .form-select {
+   border: none;
+}

@@ -1,0 +1,24 @@
+<?php
+session_start();
+unset(
+    $_SESSION["alumni"],
+    $_SESSION['student_id'],
+    $_SESSION['spass'],
+    $_SESSION['sname'],
+    $_SESSION['ssurname'],
+    $_SESSION['sdob'],
+    $_SESSION['status'],
+    $_SESSION['saddress'],
+    $_SESSION['course_id'],
+    $_SESSION['start_year'],
+    $_SESSION['duration_id'],
+    $_SESSION['profession'],
+    $_SESSION['sstate'],
+    $_SESSION['scity'],
+    $_SESSION['semail'],
+    $_SESSION['sphone'],
+    $_SESSION['sgender'],
+    $_SESSION['srole_id'],
+    $_SESSION['simage']
+);
+header("Location: ../login.php");

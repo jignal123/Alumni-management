@@ -1,0 +1,19 @@
+<?php
+session_start();
+unset(
+    $_SESSION["admin"],
+    $_SESSION['admin_id'],
+    $_SESSION['pass'],
+    $_SESSION['name'],
+    $_SESSION['surname'],
+    $_SESSION['dob'],
+    $_SESSION['state'],
+    $_SESSION['city'],
+    $_SESSION['email'],
+    $_SESSION['phone'],
+    $_SESSION['gender'],
+    $_SESSION['role_id'],
+    $_SESSION['image']
+);
+header("Location: ../login.php");
+?>
