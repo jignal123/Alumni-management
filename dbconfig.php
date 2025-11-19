@@ -28,7 +28,7 @@ function query($query, $array = null)
 date_default_timezone_set("Asia/Kolkata");
 function send_email($email, $msg, $sub)
 {
-    define('AuthEmail', "gajjarjignal2020@gmail.com");
+    define('AuthEmail', "Youremail");
     define('Reply_email', AuthEmail);
     define('Reply_Name', "Aumni_Portal");
     require 'PHPMailer/PHPMailerAutoload.php';
@@ -41,7 +41,7 @@ function send_email($email, $msg, $sub)
     $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = AuthEmail;                 // SMTP username
-    $mail->Password = 'dkfb ummh wito rwdn';                           // SMTP password
+    $mail->Password = '<Your password>';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
@@ -90,8 +90,8 @@ function filter($data)
     foreach ($data as $key => $value) {
         $value = trim($value);
         $value = stripcslashes($value);
-        $value = htmlspecialchars($value);
         $value = strip_tags($value);
+        $value = htmlspecialchars($value);
         $data[$key] = $value;
     }
     return $data;
