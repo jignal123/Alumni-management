@@ -1,5 +1,3 @@
-I have refined the content, ensuring it is well-structured and uses clear Markdown for a professional GitHub `README.md` file.
-
 ```` markdown
 # Alumni Management System (Alumni Portal)
 
@@ -54,14 +52,14 @@ You will need a local server environment (like XAMPP or WAMP) with:
 
 1.  **Clone the Repository:**
     ```bash
-    git repo clone jignal123/Alumni-Website
+    git repo clone jignal123/Alumni-management
     ```
 2.  **Database Setup:**
-    *   Create a new database in MySQL (e.g., `alumni_portal`).
-    *   Import the provided SQL file (e.g., `admin/backup/backup_alumni_portal_2024-08-18_13-14-37.sql`) to set up the necessary tables and initial data.
+    *   Create a new database in MySQL `alumni_portal`.
+    *   Import the provided SQL file in `admin/backup/backup_alumni_portal_2024-08-18_13-14-37.sql` to set up the necessary tables and initial data.
 3.  **Configure Connection:**
     *   Place the cloned project folder inside your local server's web root (e.g., `htdocs` or `www`).
-    *   Update the database connection parameters (host, username, password, database name) in your project's configuration file (e.g., `dbconfig.php`).
+    *   Update the database connection parameters in dbconfig.php
 4.  **Access the Portal:**
     *   Open your web browser and navigate to:
         ```
