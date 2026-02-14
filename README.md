@@ -1,9 +1,8 @@
-```` markdown
 # Alumni Management System (Alumni Portal)
 
 ## 🌟 Project Overview
 
-The Alumni Management System is a robust online platform designed to build and maintain a strong connection between an educational institution and its graduates. It serves as a centralized hub for alumni engagement, networking, and information sharing regarding events and the community.
+The Alumni Management System is a robust online platform designed to build and maintain a strong connection between an educational institution and its graduates. It serves as a centralized hub for alumni engagement and networking.
 
 ## ✨ Key Features
 
@@ -15,8 +14,10 @@ The portal supports three distinct user roles (Admin, Alumni User, and Guest) an
 *   Generation and download of Event and Alumni Reports.
 *   Management of the event photo gallery.
 *   Configuration of course and duration details.
-admin:username: gajjarjignal2020@gmail.com
-      password:jignal@#7
+
+**Admin Credentials:**
+- username: gajjarjignal2020@gmail.com
+- password: jignal@#7
 
 ### 🎓 Alumni User Panel
 *   View profiles of other alumni and batch mates for networking.
@@ -52,14 +53,14 @@ You will need a local server environment (like XAMPP or WAMP) with:
 
 1.  **Clone the Repository:**
     ```bash
-    git repo clone jignal123/Alumni-management
+    git clone https://github.com/jignal123/Alumni-management.git
     ```
 2.  **Database Setup:**
-    *   Create a new database in MySQL `alumni_portal`.
+    *   Create a new database in MySQL called `alumni_portal`.
     *   Import the provided SQL file in `admin/backup/backup_alumni_portal_2024-08-18_13-14-37.sql` to set up the necessary tables and initial data.
 3.  **Configure Connection:**
     *   Place the cloned project folder inside your local server's web root (e.g., `htdocs` or `www`).
-    *   Update the database connection parameters in dbconfig.php
+    *   Update the database connection parameters in `dbconfig.php`
 4.  **Access the Portal:**
     *   Open your web browser and navigate to:
         ```
@@ -73,5 +74,3 @@ We welcome contributions! If you have suggestions or want to report an issue, pl
 ## ✍️ Development Team
 
 *   **Developer:** Jignal Gajjar
-
-````
