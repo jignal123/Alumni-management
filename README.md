@@ -1,5 +1,5 @@
 ```` markdown
-# Alumni Management System (Alumni Portal)
+#Alumni Management System (Alumni Portal)
 
 ## 🌟 Project Overview
 
